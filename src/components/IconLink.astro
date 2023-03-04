@@ -1,0 +1,13 @@
+---
+import { Icon } from 'astro-icon'
+
+export interface Props {
+  name: string;
+  link: string;
+}
+
+const { name, link } = Astro.props as Props;
+---
+<a href={link} target="_blank">
+    <Icon name={name} height="48px" width="48px" />
+</a>
