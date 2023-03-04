@@ -1,0 +1,26 @@
+---
+import { Icon } from 'astro-icon'
+---
+
+<div class="socials-container">
+    <Icon name="mail" link="/contact"/>
+    <Icon name="ra" link="https://ra.co/dj/cqqchifruit" />
+    <Icon name="instagram" link="https://www.instagram.com/cqqchifruit/" />
+    <Icon name="soundcloud" link="https://soundcloud.com/user-670053096" />
+    <Icon name="facebook" link="https://www.facebook.com/CQQCHIFRUIT/"/>       
+    <Icon name="mixcloud" link="https://www.mixcloud.com/cqqchifruit/" />
+</div>
+<style is:global>
+	.socials-container {
+	    display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+    a {
+        margin-right: 10px;
+        display: inherit;
+    }
+    path {
+        fill: white;
+    }
+</style>
