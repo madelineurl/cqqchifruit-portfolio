@@ -27,6 +27,8 @@ import SocialLinks from "../components/SocialLinks.astro";
 <style>
     body {
         overflow-y: hidden;
+        animation: fade-in 2s linear;
+        background-color: black;
     }
     .main-container {
         display: flex;
@@ -43,5 +45,13 @@ import SocialLinks from "../components/SocialLinks.astro";
         color: white;
         font-family: Gugi;
         font-size: 3rem;
+    }
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 </style>
